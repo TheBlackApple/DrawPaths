@@ -67,7 +67,7 @@
     
     pathLayer.geometryFlipped = YES;
     pathLayer.path = path.CGPath;
-    pathLayer.strokeColor = [[UIColor redColor] CGColor];
+    pathLayer.strokeColor = [[UIColor blackColor] CGColor];
     pathLayer.fillColor = nil;
     pathLayer.lineWidth = 3.0f;
     pathLayer.lineJoin = kCALineJoinBevel;
@@ -116,7 +116,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.animationLayer = [CALayer layer];
     self.animationLayer.frame = CGRectMake(20.0f, 64.0f, CGRectGetWidth(self.view.layer.bounds) - 40, CGRectGetHeight(self.view.layer.bounds) - 84);
     [self.view.layer addSublayer:self.animationLayer];
